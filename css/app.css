@@ -1,0 +1,17 @@
+#page-wrapper {
+	margin: 4% auto;
+	width: 92%;
+}
+
+#page-title {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 4%;
+	background: #060606;
+	color: #363636;
+	text-transform: lowercase;
+}
+
+#question {
+	text-shadow: 0 1px 0 rgba(0,0,0,0.8);
+}

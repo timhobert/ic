@@ -7,22 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-	<h1 class="hidden">Introverts Club</h1>
 
-	<div id="question"></div>
+	<h1 id="page-title">Introverts Club</h1>
+
+	<div id="page-wrapper">
+		<h2 id="question" class="questions"></h2>
+	</div>
 
 	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
-	<!-- <script type="text/javascript" src="lib/angular.min.js"></script> -->
+	<script type="text/javascript" src="lib/JSON-js-master/json2.js"></script>
+	<script type="text/javascript" src="lib/FitText.js-master/jquery.fittext.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript">
-		$.getJSON('data/questions.json', function(data) { 
-			var entry = data[Math.floor(Math.random()*data.length)];
-			// console.log it for the fun of it
-			console.log(entry);
-			// output the result to html
-
-			//$('#question').html("question:" + entry);
-		});
-	</script>
 </body>
 </html>
