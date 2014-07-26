@@ -10,6 +10,6 @@ $(document).ready(function() {
 	});
 
 	// big'ify
-	$("#question").fitText();
+	$("#question, #prompt").fitText();
 
 });
