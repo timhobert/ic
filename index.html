@@ -9,7 +9,20 @@
 <body>
 	<h1 class="hidden">Introverts Club</h1>
 
+	<div id="question"></div>
 
+	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+	<!-- <script type="text/javascript" src="lib/angular.min.js"></script> -->
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript">
+		$.getJSON('data/questions.json', function(data) { 
+			var entry = data[Math.floor(Math.random()*data.length)];
+			// console.log it for the fun of it
+			console.log(entry);
+			// output the result to html
+
+			//$('#question').html("question:" + entry);
+		});
+	</script>
 </body>
 </html>
