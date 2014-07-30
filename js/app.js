@@ -9,6 +9,18 @@ $(document).ready(function() {
 	    $('#question').html(output);
 	});
 
+	// if user clicks on 'Get Another', give them another question without going to the server
+	$('#get-another').click(function() {
+		$.getJSON('data/questions.json', function(data) { 
+			var entry = data[Math.floor(Math.random()*data.length)];
+			// console.log(entry);
+
+			// output the result to html
+			var output = JSON.stringify(entry.Title);
+		    $('#question').html(output);
+		});		
+	});
+
 	// big'ify
 	$("#question, #prompt").fitText();
 
