@@ -22,6 +22,6 @@ $(document).ready(function() {
 	});
 
 	// big'ify
-	$("#question, #prompt").fitText();
+	$("#question").fitText();
 
 });

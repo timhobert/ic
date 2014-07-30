@@ -27,14 +27,18 @@
 }
 
 .glyphicon-heart, .to-do-list {
+	color: #FF1493;
 	float: right;
 	clear: both;
 	font-size: 0.75em;
-	margin: 20px 3px;
+	margin: 30px 3px 0;
+}
+
+.to-do-list {
+	margin-top: 10px;
 }
 
 .glyphicon-heart {
-	color: #FF1493;
 	font-size: 2em;
 	cursor: pointer;
 }
@@ -45,6 +49,7 @@
 #header, #page-wrapper {
     position: relative;
     padding: 15px;
+    overflow: hidden;
 }
 
 #page-wrapper {
@@ -53,20 +58,19 @@
 }
 
 #header {
-    background: #161616;
-    color: #464646;
+    background: #262626;
+    color: #565656;
     text-transform: lowercase;
 }
 
-.prompt {
-    color: #565656;
+#prompt {
+    float: left;
+    font-size: 2em;
 }
 
 #get-another {
+	float: right;
     cursor: pointer;
-    position: absolute;
-    right: 15px;
-    bottom: 19px;
     color: #fff;
     text-transform: uppercase;
     font-size: 0.875em;
@@ -75,6 +79,11 @@
     border-radius: 4px;
     line-height: 1em;
 }
+
+#get-another:active {
+    padding: 9px 30px 7px;
+}
+
 
 #question {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
