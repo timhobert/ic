@@ -25,19 +25,9 @@
 <body>
 
 	<h1 id="page-title" class="hidden">Introverts Club</h1>
-	<div id="header">
-		<h2 id="prompt">Ask her...</h2>
-	</div>
+	<h1 id="prompt">Ask her...</h1>
 	<div id="page-wrapper">
 		<h2 id="question" class="questions"></h2>
-		<div class="menu-bottom">
-			<ul>
-				<li id="get-another"><span class="glyphicon glyphicon-refresh"></span>More</li>
-				<li id="favorite-this"><span class="glyphicon glyphicon-heart"></span>Favorite</li>
-				<li id="this-worked"><span class="glyphicon glyphicon-thumbs-up"></span>Good</li>
-				<li id="this-didnotwork"><span class="glyphicon glyphicon-thumbs-down"></span>No Good</li>
-			</ul>
-		</div>
 	</div>
 
 	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>

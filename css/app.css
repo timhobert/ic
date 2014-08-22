@@ -1,90 +1,112 @@
-/* FONT iCONS */
-
 @font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+font-family: 'Glyphicons Halflings';
+src: url(../fonts/glyphicons-halflings-regular.eot);
+src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
 }
 
+/* FONT iCONS */
+
 .glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+position: relative;
+top: 1px;
+display: block;
+font-family: 'Glyphicons Halflings';
+font-style: normal;
+font-weight: 400;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size: 2.5em;
+margin: 0 0 8px;
 }
 
 .glyphicon-refresh:before {
-    content: "\e031";
+content: "\e031";
 }
 
 .glyphicon-heart:before {
-    content: "\e005";
+content: "\e005";
 }
 
-.glyphicon-heart, .to-do-list {
-	color: #FF1493;
-	float: right;
-	clear: both;
-	font-size: 0.75em;
-	margin: 30px 3px 0;
+.glyphicon-thumbs-up:before {
+content: "\e125";
 }
 
-.to-do-list {
-	margin-top: 10px;
-}
-
-.glyphicon-heart {
-	font-size: 2em;
-	cursor: pointer;
+.glyphicon-thumbs-down:before {
+content: "\e126";
 }
 
 
 /* PAGE */
 
 #header, #page-wrapper {
-    position: relative;
-    padding: 15px;
-    overflow: hidden;
+position: relative;
+padding: 15px;
+overflow: hidden;
 }
 
 #page-wrapper {
-    margin: 0 auto;
-    width: 100%;
+margin: 0 auto;
+width: 100%;
 }
 
 #header {
-    background: #262626;
-    color: #565656;
-    text-transform: lowercase;
+background: #262626;
+color: #565656;
+text-transform: lowercase;
 }
 
 #prompt {
-    float: left;
-    font-size: 2em;
+float: left;
+font-size: 2em;
 }
 
-#get-another {
-	float: right;
-    cursor: pointer;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.875em;
-    background: #008AB8;
-    padding: 8px 30px;
-    border-radius: 4px;
-    line-height: 1em;
+/* FOOTER MENU */
+
+.menu-bottom {
+position: fixed;
+bottom: 0;
+left: 0;
+background: #262626;
+width: 100%;
 }
 
-#get-another:active {
-    padding: 9px 30px 7px;
+.menu-bottom ul, .menu-bottom li {
+margin: 0;
+padding: 0;
 }
 
+.menu-bottom li {
+list-style: none;
+float: left;
+width: 25%;
+cursor: pointer;
+color: #fff;
+text-transform: uppercase;
+font-size: 0.65em;
+background: #2FB5F3; /* blue cloud */
+padding: 16px;
+line-height: 1em;
+text-align: center;
+}
+
+.menu-bottom li:active {
+padding-top: 17px;
+padding-bottom: 15px;
+}
+
+.menu-bottom #favorite-this {
+background-color: #FC82C3;  /* neon pink. prev: #FF1493; */
+}
+
+.menu-bottom #this-worked {
+background-color: #18DD00;  /* neon green */
+}
+
+.menu-bottom #this-didnotwork {
+background-color: #E1C829;  /* neon yellow */
+}
 
 #question {
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
